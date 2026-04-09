@@ -8,378 +8,109 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
     <div class="logo">
-        <img src="imagens/logo.jpg" alt="Logo da Empresa">
+        <img src="Imagens/logo.jpg">
         <span>Enxovais Doce Lar</span>
     </div>
-    <nav>
-        <ul>
-            <li><a href="#home">Início</a></li>
-            <li><a href="#catalogo">Catálogo</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
 </header>
 
-<!-- HERO -->
-<section id="home" class="hero">
-    <div class="hero-text">
-        <h1>Seu lar merece o melhor</h1>
-        <p>Descubra nossa coleção completa de enxovais com qualidade, preço justo e entrega rápida.</p>
-        <button onclick="scrollToCatalog()">Ver Catálogo</button>
-    </div>
-</section>
-
-<!-- CATÁLOGO -->
 <section id="catalogo" class="catalogo">
-    <h2>Nosso Catálogo</h2>
 
-    <div class="categorias">
-        <button class="ativo" onclick="filtrar('todos', this)">Todos</button>
-        <button onclick="filtrar('cortinas', this)">Cortinas</button>
-        <button onclick="filtrar('tapetes', this)">Tapetes</button>
-        <button onclick="filtrar('cobertas', this)">Cobertas</button>
-        <button onclick="filtrar('panelas', this)">Panelas</button>
-        <button onclick="filtrar('utensilios', this)">Casa e Cozinha</button>
-    </div>
+<div class="produtos">
 
-    <div class="produtos">
-
-        <!-- CORTINAS -->
-        <div class="produto cortinas"
-             data-imagens="Imagens/CORTINAS/fenix b.png,Imagens/CORTINAS/fenix bege.jpg,Imagens/CORTINAS/fenix champagne.jpg,Imagens/CORTINAS/fenix gelo.jpg,Imagens/CORTINAS/fenix marrom.jpg"
-             onclick="abrirProduto(this)">
-            <img src="Imagens/CORTINAS/fenix b.png">
-            <h3>Cortina Fênix
-Corta-luz de tecido</h3>
-            <p>Disponível em várias cores</p>
-        </div>
-
-        <div class="produto cortinas"
-             data-imagens="Imagens/CORTINAS/lady.png,Imagens/CORTINAS/lady a.jpg,Imagens/CORTINAS/lady b.jpg,Imagens/CORTINAS/lady c.jpg,Imagens/CORTINAS/lady d.jpg,Imagens/CORTINAS/lady e.jpg,Imagens/CORTINAS/lady f.jpg,Imagens/CORTINAS/lady g.jpg,Imagens/CORTINAS/lady h.jpg,Imagens/CORTINAS/lady i.jpg"
-             onclick="abrirProduto(this)">
-            <img src="Imagens/CORTINAS/lady.png">
-            <h3>Cortina Lady</h3>
-            <p>Disponível em várias cores e modelos</p>
-        </div>
-
-        <div class="produto cortinas"
-             data-imagens="Imagens/CORTINAS/fontana.png,Imagens/CORTINAS/lady a.jpg,Imagens/CORTINAS/lady b.jpg,Imagens/CORTINAS/lady c.jpg,Imagens/CORTINAS/lady d.jpg,Imagens/CORTINAS/lady e.jpg,Imagens/CORTINAS/lady f.jpg,Imagens/CORTINAS/lady g.jpg,Imagens/CORTINAS/lady h.jpg,Imagens/CORTINAS/lady i.jpg,Imagens/CORTINAS/fontana a.png,Imagens/CORTINAS/fontana b.png,Imagens/CORTINAS/fontana c.png"
-             onclick="abrirProduto(this)">
-            <img src="Imagens/CORTINAS/fontana.png">
-            <h3>Kit Fontana - 9 peças</h3>
-            <p>Disponível em várias cores e modelos</p>
-        </div>
-
-        <div class="produto cortinas"
-             data-imagens="Imagens/CORTINAS/california.png,Imagens/CORTINAS/california a.png,Imagens/CORTINAS/california b.png,Imagens/CORTINAS/california c.png,Imagens/CORTINAS/california d.png,Imagens/CORTINAS/california e.png"
-             onclick="abrirProduto(this)">
-            <img src="Imagens/CORTINAS/california.png">
-            <h3>Cortina California</h3>
-            <p>Disponível em várias cores e modelos</p>
-        </div>
-
-        <div class="produto cortinas"
-             data-imagens="Imagens/CORTINAS/rubi.png,Imagens/CORTINAS/rubi a.png,Imagens/CORTINAS/rubi b.png"
-             onclick="abrirProduto(this)">
-            <img src="Imagens/CORTINAS/rubi.png">
-            <h3>Cortina Rubi</h3>
-            <p>Disponível em várias cores</p>
-        </div>
-
-       <!-- TAPETES -->
-
-<div class="produto tapetes"
-     data-imagens="imagens/tapetes/atlanta.jpeg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/tapetes/atlanta.jpeg">
-    <h3>Tapete Atlanta</h3>
-    <p>Design moderno e elegante</p>
-</div>
-
-<div class="produto tapetes"
-     data-imagens="imagens/tapetes/berlim.jpeg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/tapetes/berlim.jpeg">
-    <h3>Tapete Berlim</h3>
-    <p>Conforto e estilo para seu ambiente</p>
-</div>
-
-<div class="produto tapetes"
-     data-imagens="imagens/tapetes/cannes.jpeg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/tapetes/cannes.jpeg">
-    <h3>Tapete Cannes</h3>
-    <p>Toque sofisticado para sua casa</p>
-</div>
-
-<div class="produto tapetes"
-     data-imagens="imagens/tapetes/genebra.jpeg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/tapetes/genebra.jpeg">
-    <h3>Tapete Genebra</h3>
-    <p>Elegância e conforto</p>
-</div>
-
-<div class="produto tapetes"
-     data-imagens="imagens/tapetes/miami.jpeg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/tapetes/miami.jpeg">
-    <h3>Tapete Miami</h3>
-    <p>Estilo moderno para seu espaço</p>
-</div>
-
-<div class="produto tapetes"
-     data-imagens="imagens/tapetes/michigan.jpg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/tapetes/michigan.jpg">
-    <h3>Tapete Michigan</h3>
-    <p>Durabilidade e conforto</p>
-</div>
-
-<div class="produto tapetes"
-     data-imagens="imagens/tapetes/moscou.jpeg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/tapetes/moscou.jpeg">
-    <h3>Tapete Moscou</h3>
-    <p>Visual sofisticado</p>
-</div>
-
-<div class="produto tapetes"
-     data-imagens="imagens/tapetes/munique.jpeg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/tapetes/munique.jpeg">
-    <h3>Tapete Munique</h3>
-    <p>Combina com qualquer ambiente</p>
-</div>
-
-<div class="produto tapetes"
-     data-imagens="imagens/tapetes/relax.jpeg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/tapetes/relax.jpeg">
-    <h3>Tapete Relax</h3>
-    <p>Máximo conforto</p>
-</div>
-
-<div class="produto tapetes"
-     data-imagens="imagens/tapetes/toquio.jpeg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/tapetes/toquio.jpeg">
-    <h3>Tapete Tóquio</h3>
-    <p>Design contemporâneo</p>
-</div>
-
-<div class="produto tapetes"
-     data-imagens="imagens/tapetes/cozinha1.jpg, imagens/tapetes/cozinha2.jpg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/tapetes/cozinha1.jpg">
-    <h3>Tapete de Cozinha</h3>
-    <p>Vários modelos disponíveis</p>
-</div>
-        <!-- COBERTAS -->
-
-<div class="produto cobertas"
-     data-imagens="imagens/cobertas/coberta-luster.jpg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/cobertas/coberta-luster.jpg">
-    <h3>Coberta Luster</h3>
-    <p>Vários modelos disponíveis</p>
-</div>
-
-<div class="produto cobertas"
-     data-imagens="imagens/cobertas/cobertor-raschel1.jpeg, imagens/cobertas/cobertor-raschel2.jpeg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/cobertas/cobertor-raschel1.jpeg">
-    <h3>Cobertor Raschel</h3>
-    <p>Vários modelos disponíveis</p>
-</div>
-
-<div class="produto cobertas"
-     data-imagens="imagens/cobertas/cobertor-rachel-bebe1.jpeg, imagens/cobertas/cobertor-rachel-bebe2.jpeg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/cobertas/cobertor-rachel-bebe1.jpeg">
-    <h3>Cobertor Bebê Rachel</h3>
-    <p>Vários modelos disponíveis</p>
-</div>
-
-<div class="produto cobertas"
-     data-imagens="imagens/cobertas/manta.jpeg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/cobertas/manta.jpeg">
-    <h3>Manta</h3>
-    <p>Vários modelos disponíveis</p>
-</div>
-
-<div class="produto cobertas"
-     data-imagens="imagens/cobertas/manta-love-baby.jpg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/cobertas/manta-love-baby.jpg">
-    <h3>Manta Love Baby</h3>
-    <p>Vários modelos disponíveis</p>
-</div>
-
-<div class="produto cobertas"
-     data-imagens="imagens/cobertas/manta-bebe-com-naninha.jpg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/cobertas/manta-bebe-com-naninha.jpg">
-    <h3>Manta Bebê com Naninha</h3>
-    <p>Vários modelos disponíveis</p>
-</div>
-
-         <!-- PANELAS -->
-
+<!-- PANELAS -->
 <div class="produto panelas"
-     data-imagens="imagens/panelas/frigideira-francesa-antiaderente.jpeg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/panelas/frigideira-francesa-antiaderente.jpeg">
-    <h3>Frigideira Antiaderente</h3>
-    <p>Vários modelos disponíveis</p>
+data-imagens="Imagens/PANELAS/frigideira-francesa-antiaderente.jpeg"
+onclick="abrirProduto(this)">
+<img src="Imagens/PANELAS/frigideira-francesa-antiaderente.jpeg">
+<h3>Frigideira Antiaderente</h3>
+<p>Vários modelos disponíveis</p>
 </div>
 
 <div class="produto panelas"
-     data-imagens="imagens/panelas/frigideira-antiaderente.jpeg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/panelas/frigideira-antiaderente.jpeg">
-
-    <h3>Frigideira Francesa Antiaderente</h3>
-    <p>Vários modelos disponíveis</p>
+data-imagens="Imagens/PANELAS/frigideira-antiaderente.jpeg"
+onclick="abrirProduto(this)">
+<img src="Imagens/PANELAS/frigideira-antiaderente.jpeg">
+<h3>Frigideira Francesa Antiaderente</h3>
+<p>Vários modelos disponíveis</p>
 </div>
 
 <div class="produto panelas"
-     data-imagens="imagens/panelas/jogo-caçarola-gourmet.jpeg"
-     onclick="abrirProduto(this)">
-    <img src="imagens/panelas/jogo-caçarola-gourmet.jpeg">
-    <h3>Jogo de Caçarolas Gourmet</h3>
-    <p>Vários modelos disponíveis</p>
+data-imagens="Imagens/PANELAS/jogo-caçarola-gourmet.jpeg"
+onclick="abrirProduto(this)">
+<img src="Imagens/PANELAS/jogo-caçarola-gourmet.jpeg">
+<h3>Jogo de Caçarolas Gourmet</h3>
+<p>Vários modelos disponíveis</p>
 </div>
 
 <div class="produto panelas"
-     data-imagens="imagens/panelas/panela-pressao-fechamento-externo-1.png, imagens/panelas/panela-pressao-fechamento-externo-2.png, imagens/panelas/panela-pressao-fechamento-externo-3.png"
-     onclick="abrirProduto(this)">
-    <img src="imagens/panelas/panela-pressao-fechamento-externo-1.png">
-    <h3>Panela de Pressão (Fechamento Externo)</h3>
-    <p>Vários modelos disponíveis</p>
+data-imagens="Imagens/PANELAS/panela-pressao-fechamento-externo-1.png, Imagens/PANELAS/panela-pressao-fechamento-externo-2.png, Imagens/PANELAS/panela-pressao-fechamento-externo-3.png"
+onclick="abrirProduto(this)">
+<img src="Imagens/PANELAS/panela-pressao-fechamento-externo-1.png">
+<h3>Panela de Pressão (Externo)</h3>
+<p>Vários modelos disponíveis</p>
 </div>
 
 <div class="produto panelas"
-     data-imagens="imagens/panelas/panela-pressao-fechamento-interno-1.png, imagens/panelas/panela-pressao-fechamento-interno-3.png, imagens/panelas/panela-pressao-fechamento-interno-4.png"
-     onclick="abrirProduto(this)">
-    <img src="imagens/panelas/panela-pressao-fechamento-interno-1.png">
-    <h3>Panela de Pressão (Fechamento Interno)</h3>
-    <p>Vários modelos disponíveis</p>
+data-imagens="Imagens/PANELAS/panela-pressao-fechamento-interno-1.png, Imagens/PANELAS/panela-pressao-fechamento-interno-3.png, Imagens/PANELAS/panela-pressao-fechamento-interno-4.png"
+onclick="abrirProduto(this)">
+<img src="Imagens/PANELAS/panela-pressao-fechamento-interno-1.png">
+<h3>Panela de Pressão (Interno)</h3>
+<p>Vários modelos disponíveis</p>
 </div>
 
-        <!-- CASA E COZINHA -->
-        <div class="produto utensilios"
-             data-imagens="imagens/CASA/jogo-de-cama-microtec.jpg, imagens/CASA/jogo-de-cama-microtec1.jpg, imagens/CASA/jogo-de-cama-microtec2.jpg, imagens/CASA/jogo-de-cama-microtec3.jpg, imagens/CASA/jogo-de-cama-microtec4.jpg"
-             onclick="abrirProduto(this)">
-            <img src="imagens/CASA/jogo-de-cama-microtec.jpg">
-            <h3>Jogo de Cama Microtec</h3>
-            <p>Praticidade no seu dia a dia</p>
-        </div>
+<!-- CASA -->
+<div class="produto utensilios"
+data-imagens="Imagens/CASA/jogo-de-cama-microtec.jpg, Imagens/CASA/jogo-de-cama-microtec1.jpg, Imagens/CASA/jogo-de-cama-microtec2.jpg"
+onclick="abrirProduto(this)">
+<img src="Imagens/CASA/jogo-de-cama-microtec.jpg">
+<h3>Jogo de Cama</h3>
+<p>Vários modelos disponíveis</p>
+</div>
 
 <div class="produto utensilios"
-             data-imagens="imagens/CASA/colcha-milao.jpg, imagens/CASA/colcha-milao1.jpg, imagens/CASA/colcha-milao2.jpg, imagens/CASA/colcha-milao3.jpg"
-             onclick="abrirProduto(this)">
-            <img src="imagens/CASA/colcha-milao.jpg">
-            <h3>Colcha Milão</h3>
-            <p>Praticidade no seu dia a dia</p>
-        </div>
-
-        <div class="produto utensilios"
-             data-imagens="imagens/CASA/toalha-medalhao.jpeg"
-             onclick="abrirProduto(this)">
-            <img src="imagens/CASA/toalha-medalhao.jpeg">
-            <h3>Toalha Medalhão</h3>
-            <p>Praticidade no seu dia a dia</p>
-        </div>
+data-imagens="Imagens/CASA/colcha-milao.jpg, Imagens/CASA/colcha-milao1.jpg"
+onclick="abrirProduto(this)">
+<img src="Imagens/CASA/colcha-milao.jpg">
+<h3>Colcha Milão</h3>
+<p>Vários modelos disponíveis</p>
+</div>
 
 <div class="produto utensilios"
-             data-imagens="imagens/CASA/toalha-ravena.jpg"
-             onclick="abrirProduto(this)">
-            <img src="imagens/CASA/toalha-ravena.jpg">
-            <h3>Toalha Ravena</h3>
-            <p>Praticidade no seu dia a dia</p>
-        </div>
-
-        <div class="produto utensilios"
-             data-imagens="imagens/CASA/chaleira-eletrica.jpeg"
-             onclick="abrirProduto(this)">
-            <img src="imagens/CASA/chaleira-eletrica.jpeg">
-            <h3>Chaleira Elétrica</h3>
-            <p>Praticidade no seu dia a dia</p>
-        </div>
-
-        <div class="produto utensilios"
-             data-imagens="imagens/CASA/panela-eletrica-de-arroz.jpg, imagens/CASA/panela-eletrica-de-arroz1.jpg"
-             onclick="abrirProduto(this)">
-            <img src="imagens/CASA/panela-eletrica-de-arroz.jpg">
-            <h3>Panela Elétrica de Arroz</h3>
-            <p>Praticidade no seu dia a dia</p>
-        </div>
-
-        <!--ESPECIAL-->
-<div class="produto destaque" onclick="scrollToContato()">
-
-    <div class="cta-conteudo">
-        <h3>Ver Catálogo Completo</h3>
-        <p>Fale conosco no WhatsApp e receba todos os modelos disponíveis</p>
-        <span class="botao-cta">Acessar agora</span>
-    </div>
-
+data-imagens="Imagens/CASA/toalha-medalhao.jpeg"
+onclick="abrirProduto(this)">
+<img src="Imagens/CASA/toalha-medalhao.jpeg">
+<h3>Toalha Medalhão</h3>
+<p>Vários modelos disponíveis</p>
 </div>
 
-    </div>
-</section>
-
-<!-- SOBRE -->
-<section id="sobre" class="sobre">
-    <h2>Sobre Nossa Empresa</h2>
-    <p>
-        Nossa loja nasceu com o propósito de oferecer enxovais completos com qualidade e preço justo.
-        Trabalhamos para garantir variedade, conforto e praticidade, sempre priorizando a satisfação dos nossos clientes.
-    </p>
-    <p><strong>Missão:</strong> Levar conforto e qualidade para todos os lares com produtos acessíveis e duráveis.</p>
-    <p><strong>Visão:</strong> Crescer de forma sustentável, ampliando nossa presença e conquistando cada vez mais clientes satisfeitos.</p>
-    <p><strong>Valores:</strong> Comprometimento, Transparência, Qualidade e Satisfação do cliente.</p>
-</section>
-
-<!-- CONTATO -->
-<section id="contato" class="contato">
-    <div class="contato-container">
-        <h2>Fale Conosco</h2>
-        <p>Entre em contato conosco pelo WhatsApp e tire todas as suas dúvidas.</p>
-
-        <a 
-            href="#"
-            target="_blank" 
-            class="whatsapp-btn">
-            Falar no WhatsApp
-        </a>
-
-        <div class="info-contato">
-            <p>📍 Curitiba e Região Metropolitana</p>
-            <p>🕒 Segunda a Sábado das 13h às 20h</p>
-        </div>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-    <p>© 2026 Enxovais Doce Lar - Todos os direitos reservados</p>
-</footer>
-
-<!-- MODAL -->
-<div id="modal" class="modal">
-    <div class="modal-conteudo">
-        <span onclick="fecharModal()">X</span>
-        <img id="imagemPrincipal">
-        <div id="miniaturas"></div>
-    </div>
+<div class="produto utensilios"
+data-imagens="Imagens/CASA/toalha-ravena.jpg"
+onclick="abrirProduto(this)">
+<img src="Imagens/CASA/toalha-ravena.jpg">
+<h3>Toalha Ravena</h3>
+<p>Vários modelos disponíveis</p>
 </div>
+
+<div class="produto utensilios"
+data-imagens="Imagens/CASA/chaleira-eletrica.jpeg"
+onclick="abrirProduto(this)">
+<img src="Imagens/CASA/chaleira-eletrica.jpeg">
+<h3>Chaleira Elétrica</h3>
+<p>Vários modelos disponíveis</p>
+</div>
+
+<div class="produto utensilios"
+data-imagens="Imagens/CASA/panela-eletrica-de-arroz.jpg, Imagens/CASA/panela-eletrica-de-arroz1.jpg"
+onclick="abrirProduto(this)">
+<img src="Imagens/CASA/panela-eletrica-de-arroz.jpg">
+<h3>Panela Elétrica de Arroz</h3>
+<p>Vários modelos disponíveis</p>
+</div>
+
+</div>
+</section>
 
 <script src="script.js"></script>
 
