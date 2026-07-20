@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const hoje = new Date();
         const dataFormatada = hoje.toLocaleDateString("pt-BR");
 
-        const numero = "554197347188"; // seu número
+        const numero = "5541991758784"; // seu número
         const mensagem = `Olá! Visitei o site hoje (${dataFormatada}) e gostaria de mais informações sobre os produtos.`;
 
         const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
